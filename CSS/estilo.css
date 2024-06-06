@@ -1,0 +1,93 @@
+body{
+    background-color:#8cb2fa;/* cor de fundo da pagina */
+    color: #000000; /* Cor da fonte */
+    font-size: 26px; /*Tamanho da Fonte*/
+    margin: 0; /* Margem em relação a tela */
+    /*padding: 0; Margem interna* se o margin estiver 0 nao precisa de padding*/
+}/*Comentarios */
+
+header{
+    border: 2px solid #4c76ff;
+    text-align: center;
+}/* Seletor do cabeçalho */
+
+.botoesMenu, li{
+    color: #fff;
+    list-style-type: none;/*Remove as bolinhas de topicos*/
+    display: inline;/*Transforma coluna em linha*/
+    border: 2px solid #000;
+    padding: 2px;
+    background-color: #000;
+}
+li:hover{ /*Hover é um elemento de modificação -> modifica o conteudo original da Tag*/
+    background-color: #000;
+    font-size: 30px;
+    font-family: 'Trebuchet MS'; /*Definir uma fonte*/
+    border: 10px solid #888
+}
+
+.titulo{/*chama-se uma classe com .*/
+    border: 2px solid #666;
+}/*Chamando a classe */
+
+/* se eu quero formatar varios titulos iguais eu utilizo class 
+se for diferente pode criar com ids*/
+
+aside{
+    background-image: url("../Imagens/palno\ de\ fundo.jfif");/*Adicionar uma imagem de plano de fundo*/
+    background-repeat: no-repeat;
+}
+.imgFmt{
+    /* Formatar a imagem */
+    width: 50%; /*Altura*/
+    height: 50%; /*Largura*/
+}
+
+.galeria{
+    display: grid; /*Formato de Visualização - tabela*/
+    grid-template-columns: 30% 30% 30%; /*Quantidade de colunas e tamanho*/
+    grid-template-rows: auto; /*Quantidade de linhas e tamanho*/
+    grid-gap: 1%; /*Espaço entre os conteudos*/
+    margin-left: 5%;
+}
+
+article{
+    border: 2px solid #000;
+    text-align: center;/*Alinhamento do texto*/
+    color: #000;/*Cor do texto*/
+    font-size: 90%;/*tamanho da fonte*/
+    background-color: #fff;/*cor de fundo*/
+    padding-bottom: 15%;
+}
+
+h3{
+    border: 2px solid #000;
+    margin-top: 0%; /* espaço externo*/
+    padding: 3%; /*margem interna*/
+    background-color: #000; /*cor do plano de fundo*/
+    color: #fff;
+    font-size: 150%; /*tamanho da fonte*/
+}
+
+a{
+    border: 2px solid #000;
+    padding: 5%;
+    font-weight: bold; /*negrito*/
+    background-color: #888;
+    color: #fff;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.preco{
+    margin-bottom: 8%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    font: 130%;
+    border-radius: 50%;
+}
